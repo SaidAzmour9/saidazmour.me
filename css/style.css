@@ -22,6 +22,7 @@
     padding: 15px 140px;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     align-items: center;
     z-index: 999;
     width: 100%;
@@ -325,6 +326,7 @@
 .contact {
     display: flex;
     justify-items: flex-start;  
+    flex-wrap: wrap;
 }
 
 .contact-info {
@@ -435,4 +437,147 @@ form button:hover{
 .footer ul li:hover{
 	border: 2px solid #fff;
 
+}
+
+
+
+/* media query for tablett */
+
+@media screen  and (max-width: 992px) {
+    html,body{
+        overflow-x: hidden;
+    }
+    .container{
+        width: 100vw;
+        margin: 0 auto;
+    }
+    .header{
+        padding: 15px 15px;
+    
+    }  
+
+    .header .logo{
+        font-size: 1.4em;
+        font-weight: 600;
+    }
+    .header .menu a{
+        padding: 8px;
+        margin-left: 5px;
+        font-size: 1em;
+        font-weight: 500;
+    }
+
+    .home {
+        padding: 100px 20px;
+        background-size: cover;
+        height: 80vh;
+        display: flex;
+        align-content: center;
+    }
+
+    .about{
+        padding: 20px 20px;
+        background: ghostwhite;
+    }
+    
+    .about_content {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    .wrapper{
+    
+        width: 90%;
+    }
+    .contaper{
+        margin: auto;   
+        width: 100%;
+       
+    }
+
+    
+    .services_content {
+        padding: 20px;
+    }
+
+    .services_content .item {
+        width: 45%;
+    }
+    
+    .projects-content .item {
+        width: 45%;
+    }
+    .contact-info {
+        width: 90%;
+    }
+    .contact-form {
+        width: 90%;
+    }
+    
+}
+
+/* media query for mobile */
+
+@media screen  and (max-width: 600px) {
+    .container{
+        max-width: 100%;
+        margin: auto;
+    }
+    .header{
+        margin: 0;
+        padding: 15px 5px;
+    
+    }  
+
+    .header .logo{
+        margin: auto;
+        font-size: 1.1em;
+        font-weight: 600;
+        margin-bottom: 10px;
+        background-color: #000;
+    }
+    .header .menu a{
+        padding: 5px;
+        margin-left: 2px;
+        font-size: 1em;
+        font-weight: 400;
+    }
+
+    .home {
+        padding: 100px 20px;
+        background-size: cover;
+        height: 80vh;
+        display: flex;
+        align-content: center;
+    }
+
+    .about{
+        padding: 20px 20px;
+        background: ghostwhite;
+    }
+    
+    .about_content {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    .services_content {
+        padding: 20px;
+    }
+
+    .services_content .item {
+        width: 90%;
+    }
+    
+    .projects-content .item {
+        width: 90%;
+    }
+    .contact-info {
+        width: 90%;
+    }
+    .contact-form {
+        width: 90%;
+    }
+    
 }
