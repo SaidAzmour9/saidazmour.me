@@ -43,6 +43,11 @@
     font-weight: 700;
     text-transform: uppercase;
 }
+
+.header .navbar-toggle {
+    display: none;
+}
+
 .header .menu a{
     padding: 10px;
     margin-left: 10px;
@@ -457,14 +462,45 @@ form button:hover{
     }  
 
     .header .logo{
+        margin-left: 10px;
         font-size: 1.4em;
         font-weight: 600;
+    }
+
+    .header .navbar-toggle {
+        display: block;
+        font-size: 1.8em;
+        margin-right: 10px;
+    }
+    .active{
+        display: block;
+    }
+
+    .header .menu {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        text-align: center;
+    }
+    .header .menu li{
+        display: none;
+        margin-bottom: 10px;
+        font-weight: bold;
+        font-size: 1.4em;
+        width: 100%;
+        text-align: center;
+    }
+    .header .menu li.active{
+        display: flex;
     }
     .header .menu a{
         padding: 8px;
         margin-left: 5px;
-        font-size: 1em;
-        font-weight: 500;
+        
+    }
+
+    .header .menu li:hover{
+        background-color: #000;
     }
 
     .home {
@@ -531,11 +567,10 @@ form button:hover{
     }  
 
     .header .logo{
-        margin: auto;
-        font-size: 1.1em;
+        
+        font-size: 1.5em;
         font-weight: 600;
         margin-bottom: 10px;
-        background-color: #000;
     }
     .header .menu a{
         padding: 5px;
