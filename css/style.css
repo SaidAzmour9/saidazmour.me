@@ -120,7 +120,13 @@
     display: flex;
     justify-content: space-between;
 }
+.about_content .about_img {
+    width: 100%;
+}
 
+.about_content .about_img img{
+    width: 100%;
+}
 .about_info {
     padding-top: 80px;
 }
@@ -544,6 +550,15 @@ form button:hover{
     .projects-content .item {
         width: 45%;
     }
+
+    .contaper{
+        margin: auto;   
+        width: 95%;
+        background-color: white;
+        border-radius: 10px;
+        box-shadow: 0 10px 10px rgba(0,0,0,0.2);
+    } 
+
     .contact-info {
         width: 90%;
     }
@@ -583,7 +598,7 @@ form button:hover{
         background: url(../images/white_banner.jpg);
         background-size: contain;
         width: 100%;
-        height: 100vh;
+        height:auto;
         display: flex;
         align-content: center;
         background-repeat: no-repeat;
@@ -605,10 +620,18 @@ form button:hover{
 
     .services_content .item {
         width: 90%;
+        margin: 10px auto;
     }
     
     .projects-content .item {
         width: 90%;
+    }
+    .contaper{
+        margin: 0;   
+        width: 80%;
+        background-color: white;
+        border-radius: 10px;
+        box-shadow: 0 10px 10px rgba(0,0,0,0.2);
     }
     .contact-info {
         width: 90%;
