@@ -625,6 +625,7 @@ form button:hover{
     
     .projects-content .item {
         width: 90%;
+        margin: auto;
     }
     .contaper{
         margin: 0;   
