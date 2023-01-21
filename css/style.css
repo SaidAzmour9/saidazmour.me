@@ -22,6 +22,7 @@
     padding: 15px 140px;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     align-items: center;
     z-index: 999;
     width: 100%;
@@ -42,6 +43,11 @@
     font-weight: 700;
     text-transform: uppercase;
 }
+
+.header .navbar-toggle {
+    display: none;
+}
+
 .header .menu a{
     padding: 10px;
     margin-left: 10px;
@@ -114,7 +120,13 @@
     display: flex;
     justify-content: space-between;
 }
+.about_content .about_img {
+    width: 100%;
+}
 
+.about_content .about_img img{
+    width: 100%;
+}
 .about_info {
     padding-top: 80px;
 }
@@ -325,6 +337,7 @@
 .contact {
     display: flex;
     justify-items: flex-start;  
+    flex-wrap: wrap;
 }
 
 .contact-info {
@@ -435,4 +448,197 @@ form button:hover{
 .footer ul li:hover{
 	border: 2px solid #fff;
 
+}
+
+
+
+/* media query for tablett */
+
+@media screen  and (max-width: 992px) {
+    html,body{
+        overflow-x: hidden;
+    }
+    .container{
+        width: 100vw;
+        margin: 0 auto;
+    }
+    .header{
+        padding: 15px 15px;
+    
+    }  
+
+    .header .logo{
+        margin-left: 10px;
+        font-size: 1.4em;
+        font-weight: 600;
+    }
+
+    .header .navbar-toggle {
+        display: block;
+        font-size: 1.8em;
+        margin-right: 10px;
+    }
+    .active{
+        display: block;
+    }
+
+    .header .menu {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        text-align: center;
+    }
+    .header .menu li{
+        display: none;
+        margin-bottom: 10px;
+        font-weight: bold;
+        font-size: 1.4em;
+        width: 100%;
+        text-align: center;
+    }
+    .header .menu li.active{
+        display: flex;
+    }
+    .header .menu a{
+        padding: 8px;
+        margin-left: 5px;
+        
+    }
+
+    .header .menu li:hover{
+        background-color: #000;
+    }
+
+    .home {
+        padding: 100px 20px;
+        background-size: cover;
+        height: 80vh;
+        display: flex;
+        align-content: center;
+    }
+
+    .about{
+        padding: 20px 20px;
+        background: ghostwhite;
+    }
+    
+    .about_content {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    .wrapper{
+    
+        width: 90%;
+    }
+    .contaper{
+        margin: auto;   
+        width: 100%;
+       
+    }
+
+    
+    .services_content {
+        padding: 20px;
+    }
+
+    .services_content .item {
+        width: 45%;
+    }
+    
+    .projects-content .item {
+        width: 45%;
+    }
+
+    .contaper{
+        margin: auto;   
+        width: 95%;
+        background-color: white;
+        border-radius: 10px;
+        box-shadow: 0 10px 10px rgba(0,0,0,0.2);
+    } 
+
+    .contact-info {
+        width: 90%;
+    }
+    .contact-form {
+        width: 90%;
+    }
+    
+}
+
+/* media query for mobile */
+
+@media screen  and (max-width: 600px) {
+    .container{
+        max-width: 100%;
+        margin: auto;
+    }
+    .header{
+        margin: 0;
+        padding: 15px 5px;
+    
+    }  
+
+    .header .logo{
+        
+        font-size: 1.5em;
+        font-weight: 600;
+        margin-bottom: 10px;
+    }
+    .header .menu a{
+        padding: 5px;
+        margin-left: 2px;
+        font-size: 1em;
+        font-weight: 400;
+    }
+
+    .home {
+        background: url(../images/white_banner.jpg);
+        background-size: contain;
+        width: 100%;
+        height:auto;
+        display: flex;
+        align-content: center;
+        background-repeat: no-repeat;
+    }
+
+    .about{
+        padding: 20px 20px;
+        background: ghostwhite;
+    }
+    
+    .about_content {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    .services_content {
+        padding: 20px;
+    }
+
+    .services_content .item {
+        width: 90%;
+        margin: 10px auto;
+    }
+    
+    .projects-content .item {
+        width: 90%;
+        margin: auto;
+    }
+    .contaper{
+        margin: 0;   
+        width: 80%;
+        background-color: white;
+        border-radius: 10px;
+        box-shadow: 0 10px 10px rgba(0,0,0,0.2);
+    }
+    .contact-info {
+        width: 90%;
+    }
+    .contact-form {
+        width: 90%;
+    }
+    
 }
